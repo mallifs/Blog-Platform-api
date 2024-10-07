@@ -8,10 +8,10 @@ from rest_framework.authtoken.views import obtain_auth_token
 
 # Setting up the router
 router = DefaultRouter()
-router.register(r'posts', BlogPostViewSet, basename='post')  # Blog post routes
-router.register(r'categories', CategoryViewSet, basename='category')  # Category routes
-router.register(r'tags', TagViewSet, basename='tag')  # Tag routes
-router.register(r'users', UserViewSet, basename='user')  # User routes
+router.register(r'posts', BlogPostViewSet, basename='post')  
+router.register(r'categories', CategoryViewSet, basename='category')   
+router.register(r'tags', TagViewSet, basename='tag')   
+router.register(r'users', UserViewSet, basename='user')  
 
 # Defining the urlpatterns
 urlpatterns = [

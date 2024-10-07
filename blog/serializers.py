@@ -22,9 +22,9 @@ class TagSerializer(serializers.ModelSerializer):
 
 # BlogPost serializer# BlogPost serializer
 class BlogPostSerializer(serializers.ModelSerializer):
-    author = UserSerializer(read_only=True)  # Read-only for author
-    category = serializers.PrimaryKeyRelatedField(queryset=Category.objects.all())  # Category PK
-    tags = serializers.PrimaryKeyRelatedField(many=True, queryset=Tag.objects.all())  # Tags PK
+    author = UserSerializer(read_only=True)   
+    category = serializers.PrimaryKeyRelatedField(queryset=Category.objects.all())  
+    tags = serializers.PrimaryKeyRelatedField(many=True, queryset=Tag.objects.all()) 
 
     class Meta:
         model = BlogPost

@@ -29,7 +29,7 @@ class TagViewSet(viewsets.ModelViewSet):
     serializer_class = TagSerializer
     permission_classes = [IsAuthenticatedOrReadOnly]
 
-# User ViewSet (Optional)
+
 from django.contrib.auth.models import User
 from .serializers import UserSerializer
 
